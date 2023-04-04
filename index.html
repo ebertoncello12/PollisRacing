@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Descrição" content="Botao do google com API para facilitar o login dos alunos sem ter que escrever seu email e senha assim nao perdendo tempo de AULA">
+<title>Centralizador</title> 
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/css/fonts.css">
+<link href="/css/style.css" rel="stylesheet">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+<script src="/js/index.js"></script>
+<script>
+  window.onload = function() {
+    var isLoggedIn = sessionStorage.getItem('loggedIn');
+    if (!isLoggedIn) {
+      window.location.href = 'login.html';
+    }
+}
+</script>
+
 </head>
 <body>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <header class="detalhe"></header>
+  <div class="texto">
+    <h4 class="text-ola" id="ola"></h4>
+    <p class="texto-msg" id="mensagem"></p>
+    <a href="#" class="botao-efeito" title="Google Button">
+      <div id="botaoLogin" class="botao-login"></div> 
+    </a>
     
+  </div>
+    <div class="img">
+      <img src="/img/garoto.png" class="img-garoto" alt="Menino sentado em uma cadeira de escritório estudando na frente de um computador">
+        <img src="/img/tuboamarelo.png" class="tubo-amarelo" alt="Forma geométrica tubular">
+          <img src="/img/rosquinhabranca.png" class="circulo-branco" alt="Forma geométrica de um circulo vazado">
+            <img src="/img/conevermelho.png" class="cone-vermelha" alt="Forma geométrica em cone">
+          <img src="/img/quadradovermelho.png" class="quadrado-vermelho" alt="Forma geométrica de um quadrado">
+        <img src="/img/limaoverde.png" class="limao-verde" alt="Forma geométrica de meio círculo">
+      <img src="/img/logo-colorido.svg" class="logo" alt="Logo do colégio">
+    </div>
 </body>
-</html>
+</html> 

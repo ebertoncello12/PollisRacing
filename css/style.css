@@ -1,0 +1,381 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+body {
+    background-color: #004760;;
+    font-family: 'Nunito', sans-serif;  
+}
+  /*Configura um mini Detalhe na tela */
+.detalhe {
+    position: absolute;
+    width: 120px;
+    height: 17px;
+    left: 190px;
+    top: 100px;
+    background: #e7e7e7;
+  }
+  .botao-login{
+    top: 425px;
+  }
+  
+/*Texto Ola*/
+.text-ola {
+    position: absolute;
+    width: 456px;
+    height: 130px;
+    left: 159px;
+    top: 335px;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 114px;
+    color: #f5f5f5;
+    
+  }
+  /*Texto "Acesse o centralizador com a sua conta google"*/
+.texto-msg {
+    position: absolute;
+    width: 438px;
+    height: 20px;
+    left: 159px;
+    top: 465px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+  } 
+.botao-efeito {
+    text-decoration: none;
+    border: 10px;
+    border-radius: 20px;
+    position: absolute;
+    width: 267px;
+    height: 49px;
+    left: 159px;
+    top: 585px;
+    background-repeat: no-repeat;
+  }
+.botao-efeito:hover {
+    transform: translateY(-10px);
+    transition: transform 2.0s ease-out;
+    background-color: #2a76a5;
+    width: auto;
+    height: auto;
+  }
+.img-garoto {   
+    position: absolute;
+    width: 600px;
+    height: 560px;
+    left: 725px;
+    top: 120px;
+    background-repeat: no-repeat;
+}
+/*ESTiLIZAÇAO E ANIMAÇAO DOS ICONS*/
+.tubo-amarelo {
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    left: 527px;
+    top: 118px;
+}
+.circulo-branco {
+    position: absolute;
+    width: 130px;
+    height: 115px;
+    left: 1030px;
+    top: 18px;
+}
+.cone-vermelha {
+    position: absolute;
+    width: 175px;
+    height: 165px;
+    left: 1300px;
+    top: 165px;
+    z-index: -2;
+}
+.quadrado-vermelho {
+    position: absolute;
+    width: 160px;
+    height: 125px;
+    left: 550px;
+    top: 700px;
+}
+.limao-verde {
+    position: absolute;
+    width: 150px;
+    height: 105px;
+    left: 1300px;
+    top: 600px;
+}
+/* ESTILIZAÇAO BUTTON GOOGLE OAUTH*/
+   @keyframes animaImagem {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  /* ANIMAÇAO DAS IMAGENS */
+
+  .tubo-amarelo {
+    animation: animaImagem 2s ease infinite;
+  }
+  .circulo-branco {
+    animation: animaImagem 3s ease infinite;
+  }
+  
+  .cone-vermelha {
+    animation: animaImagem 3.5s ease infinite;
+  }
+  .quadrado-vermelho {
+    animation: animaImagem 3.5s ease infinite;
+  }
+  .limao-verde {
+    animation: animaImagem 4.5s ease infinite;
+  }
+  .text-ola {
+    position: relative;
+  }
+  /*Estilizaçao DO "OLA"*/
+  @media screen and (max-width:500px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-ola {
+      font-size: 2.5rem;
+      display: inline-flex;
+      padding: 0;
+      left: 20px;
+      top: 425px;
+    }
+    .texto-msg {
+      flex-direction: column;
+      font-size: 1.0rem;
+      padding: 0;
+      left: 20px;
+      top: 525px;
+    }
+    #botaoLogin {
+      text-align: left;
+    }
+    #botaoLogin > div {
+      margin: 0 auto;
+      left: 0;
+    }
+    .img-garoto {
+      position: absolute;
+      width: 250px;
+      height: 200px;
+      left: 20px;
+      top: 150px;
+      background-repeat: no-repeat;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tubo-amarelo {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 20px;
+      top: 65px;
+      background-repeat: no-repeat;
+    }
+    .circulo-branco {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 120px;
+      top: 35px;
+      background-repeat: no-repeat;
+    }
+    .cone-vermelha {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 220px;
+      top: 65px;
+      background-repeat: no-repeat;
+    }
+    .limao-verde {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 265px;
+      top: 250px;
+      background-repeat: no-repeat;
+    }
+    .quadrado-vermelho {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 260px;
+      top: 150px;
+      background-repeat: no-repeat;
+    }
+    .detalhe {
+      flex-direction: column;
+      font-size: 1.0rem;
+      padding: 0;
+      left: 20px;
+      top: 420px;
+    }
+    .botao-efeito {
+      text-decoration: none;
+      border: 10px;
+      border-radius: 20px;
+      position: absolute;
+      left: 0;
+      margin-left: 15px;
+    }
+  }
+  @media screen and (max-width:1024px){
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-ola {
+      font-size: 2.5rem;
+      display: inline-flex;
+      padding: 0;
+      left: 20px;
+      top: 425px;
+    }
+    .texto-msg {
+      flex-direction: column;
+      font-size: 1.0rem;
+      padding: 0;
+      left: 20px;
+      top: 525px;
+    }
+    #botaoLogin {
+      text-align: left;
+    }
+    #botaoLogin > div {
+      margin: 0 auto;
+      left: 0;
+    }
+    .img-garoto {
+      position: absolute;
+      width: 250px;
+      height: 200px;
+      left: 20px;
+      top: 150px;
+      background-repeat: no-repeat;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .tubo-amarelo {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 20px;
+      top: 65px;
+      background-repeat: no-repeat;
+    }
+    .circulo-branco {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 120px;
+      top: 35px;
+      background-repeat: no-repeat;
+    }
+    .cone-vermelha {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 220px;
+      top: 65px;
+      background-repeat: no-repeat;
+    }
+    .limao-verde {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 265px;
+      top: 250px;
+      background-repeat: no-repeat;
+    }
+    .quadrado-vermelho {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 260px;
+      top: 150px;
+      background-repeat: no-repeat;
+    }
+    .detalhe {
+      flex-direction: column;
+      font-size: 1.0rem;
+      padding: 0;
+      left: 20px;
+      top: 420px;
+    }
+    .botao-efeito {
+      text-decoration: none;
+      border: 10px;
+      border-radius: 20px;
+      position: absolute;
+      left: 0;
+      margin-left: 15px;
+    }    
+  }
+  .logo {
+    max-width: 125px; 
+    position: absolute;
+    top: 30px;
+    left: 185px;
+  }   
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #004760;
+    background-size: cover;
+    z-index: 9999;
+  }
+  #loader {
+    border: 12px solid #e0eb4bd5;
+    border-top: 12px solid #2a76a5;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 5s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
